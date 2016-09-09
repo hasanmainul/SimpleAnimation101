@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SimpleAnimation101" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rdU-os-ZAi">
+                                <rect key="frame" x="42" y="100" width="517" height="91"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Initial Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHC-4y-VH5">
+                                        <rect key="frame" x="57" y="26" width="402" height="39"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="402" id="9uu-aG-w7T"/>
+                                            <constraint firstAttribute="height" constant="39" id="tuk-MN-S3J"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.77035256409999997" green="0.0" blue="0.086148999830000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="wHC-4y-VH5" firstAttribute="centerX" secondItem="rdU-os-ZAi" secondAttribute="centerX" id="Bda-Mt-bCq"/>
+                                    <constraint firstAttribute="width" constant="517" id="F33-Yw-dQF"/>
+                                    <constraint firstItem="wHC-4y-VH5" firstAttribute="top" secondItem="rdU-os-ZAi" secondAttribute="top" constant="26" id="g9M-mZ-YDN"/>
+                                    <constraint firstAttribute="bottom" secondItem="wHC-4y-VH5" secondAttribute="bottom" constant="26" id="wzd-Zq-jS4"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qdx-wn-9Pf">
+                                <rect key="frame" x="241" y="212" width="119" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="65f-l0-1if"/>
+                                    <constraint firstAttribute="width" constant="119" id="HBe-Jj-Nso"/>
+                                </constraints>
+                                <state key="normal" title="Start Sliding"/>
+                                <connections>
+                                    <action selector="slideTextButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oZK-Km-sYA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fly In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yuv-gs-PXD">
+                                <rect key="frame" x="172" y="317" width="256" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="2q0-to-kDz"/>
+                                    <constraint firstAttribute="width" constant="256" id="GIW-LP-kGv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.82745098039999998" green="0.3294117647" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kv2-43-2Nc">
+                                <rect key="frame" x="241" y="410" width="119" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="119" id="Sxo-58-MNf"/>
+                                    <constraint firstAttribute="height" constant="30" id="vkS-1p-MyM"/>
+                                </constraints>
+                                <state key="normal" title="FadeIn"/>
+                                <connections>
+                                    <action selector="updateBirdTypeLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yt8-vJ-gFJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yuv-gs-PXD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GHB-sc-CiU"/>
+                            <constraint firstItem="rdU-os-ZAi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="Wzs-Wy-foU"/>
+                            <constraint firstItem="kv2-43-2Nc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZG4-MD-xs7"/>
+                            <constraint firstItem="Qdx-wn-9Pf" firstAttribute="top" secondItem="rdU-os-ZAi" secondAttribute="bottom" constant="21" id="bP1-18-ciA"/>
+                            <constraint firstItem="rdU-os-ZAi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jLj-gm-Tod"/>
+                            <constraint firstItem="kv2-43-2Nc" firstAttribute="top" secondItem="yuv-gs-PXD" secondAttribute="bottom" constant="55" id="lSt-rb-vvf"/>
+                            <constraint firstItem="Qdx-wn-9Pf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q2r-JH-TwY"/>
+                            <constraint firstItem="yuv-gs-PXD" firstAttribute="top" secondItem="Qdx-wn-9Pf" secondAttribute="bottom" constant="75" id="yuS-83-XPd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="birdTypeLabel" destination="yuv-gs-PXD" id="Qoh-yN-RcV"/>
+                        <outlet property="slidingLabel" destination="wHC-4y-VH5" id="6ro-86-Yf4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+</document>
